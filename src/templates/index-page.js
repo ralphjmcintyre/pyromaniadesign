@@ -1,6 +1,6 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
+import { Link, graphql, navigate } from 'gatsby'
 
 import Layout from '../components/Layout'
 import Features from '../components/Features'
@@ -127,20 +127,26 @@ IndexPageTemplate.propTypes = {
 }
 
 const IndexPage = ({ data }) => {
+  useEffect(() => {
+    navigate('/blog/');
+  }, []);
+
   const { frontmatter } = data.markdownRemark
 
   return (
-    <Layout>
-      <IndexPageTemplate
-        image={frontmatter.image}
-        title={frontmatter.title}
-        heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
-        intro={frontmatter.intro}
-      />
-    </Layout>
+    <React.Fragment>
+    </React.Fragment>
+    // <Layout>
+    //   <IndexPageTemplate
+    //     image={frontmatter.image}
+    //     title={frontmatter.title}
+    //     heading={frontmatter.heading}
+    //     subheading={frontmatter.subheading}
+    //     mainpitch={frontmatter.mainpitch}
+    //     description={frontmatter.description}
+    //     intro={frontmatter.intro}
+    //   />
+    // </Layout>
   )
 }
 
