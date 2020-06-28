@@ -94,16 +94,32 @@ export default () => (
                   }
                 }
                 image2 {
-                  childImageSharp
+                  childImageSharp {
+                    fluid(maxWidth: 120, quality: 100) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
                 }
                 image3 {
-                  childImageSharp
+                  childImageSharp {
+                    fluid(maxWidth: 120, quality: 100) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
                 }
                 image4 {
-                  childImageSharp
+                  childImageSharp {
+                    fluid(maxWidth: 120, quality: 100) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
                 }
                 image5 {
-                  childImageSharp
+                  childImageSharp {
+                    fluid(maxWidth: 120, quality: 100) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
                 }
               }
             }
