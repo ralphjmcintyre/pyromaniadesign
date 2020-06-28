@@ -93,6 +93,18 @@ export default () => (
                     }
                   }
                 }
+                image2 {
+                  childImageSharp
+                }
+                image3 {
+                  childImageSharp
+                }
+                image4 {
+                  childImageSharp
+                }
+                image5 {
+                  childImageSharp
+                }
               }
             }
           }
