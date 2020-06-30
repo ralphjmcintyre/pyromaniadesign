@@ -7,8 +7,6 @@ featuredpost: false
 featuredimage: /img/iguana-color-cropped.jpg
 image2: /img/blog-index.jpg
 image3: /img/chemex.jpg
-image4: /img/favicon-16x16.png
-image5: /img/coffee-gear.png
 tags:
   - bear
 ---

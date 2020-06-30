@@ -41,8 +41,6 @@ collections:
       - {label: "Featured Image", name: "featuredimage", widget: image}
       - {label: "Image 2", name: "image2", widget: image}
       - {label: "Image 3", name: "image3", widget: image}
-      - {label: "Image 4", name: "image4", widget: image}
-      - {label: "Image 5", name: "image5", widget: image}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
     
