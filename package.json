@@ -29,6 +29,7 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-helmet": "^6.0.0",
+    "simple-react-lightbox": "^3.2.3-3",
     "uuid": "^7.0.0"
   },
   "keywords": [
