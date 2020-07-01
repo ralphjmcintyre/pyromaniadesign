@@ -68,7 +68,7 @@ const WorkPost = ({ data }) => {
             <title>{`${post.frontmatter.title}`}</title>
             <meta
               name="description"
-              content={`${post.frontmatter.description}`}
+              content={`${post.frontmatter.title} ${post.frontmatter.size} ${post.frontmatter.material}`}
             />
           </Helmet>
         }
@@ -93,9 +93,13 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
         title
-        description
+        size
+        material
+        price
+        featuredimage
+        image2
+        image3
         tags
       }
     }
