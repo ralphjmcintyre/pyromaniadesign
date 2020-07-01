@@ -97,9 +97,27 @@ export const pageQuery = graphql`
         size
         material
         price
-        featuredimage
-        image2
-        image3
+        featuredimage {
+          childImageSharp {
+            fluid(maxWidth: 120, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        image2 {
+          childImageSharp {
+            fluid(maxWidth: 120, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        image3 {
+          childImageSharp {
+            fluid(maxWidth: 120, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         tags
       }
     }
