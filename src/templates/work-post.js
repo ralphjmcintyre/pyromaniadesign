@@ -9,9 +9,14 @@ import Content, { HTMLContent } from '../components/Content'
 export const WorkPostTemplate = ({
   content,
   contentComponent,
-  description,
-  tags,
   title,
+  size,
+  material,
+  price,
+  featuredimage,
+  image2,
+  image3,
+  tags,
   helmet,
 }) => {
   const PostContent = contentComponent || Content
@@ -25,8 +30,15 @@ export const WorkPostTemplate = ({
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
-            <p>{description}</p>
-            <PostContent content={content} />
+            <div>
+              <p>Material: {material}</p>
+            </div>
+            <div>
+              <p>Size: {size}</p>
+            </div>
+            <div>
+              <p>Price: {price}</p>
+            </div>
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Tags</h4>
@@ -49,8 +61,10 @@ export const WorkPostTemplate = ({
 WorkPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
-  description: PropTypes.string,
   title: PropTypes.string,
+  size: PropTypes.string,
+  material: PropTypes.string,
+  price: PropTypes.string,
   helmet: PropTypes.object,
 }
 
@@ -74,6 +88,9 @@ const WorkPost = ({ data }) => {
         }
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
+        size={post.frontmatter.size}
+        material={post.frontmatter.material}
+        price={post.frontmatter.price}
       />
     </Layout>
   )
