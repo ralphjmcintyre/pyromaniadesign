@@ -5,7 +5,8 @@ import { Helmet } from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
-import SimpleReactLightbox, {SRLWrapper} from "simple-react-lightbox";
+import SimpleReactLightbox from 'simple-react-lightbox';
+import { SRLWrapper } from 'simple-react-lightbox';
 
 export const WorkPostTemplate = ({
   content,
@@ -22,8 +23,18 @@ export const WorkPostTemplate = ({
 }) => {
   const PostContent = contentComponent || Content
 
+  console.log(featuredimage);
+
   const images = [
-    
+    {
+      src: featuredimage.childImageSharp.fluid.src
+    },
+    {
+      src: image2.childImageSharp.fluid.src
+    },
+    {
+      src: image3.childImageSharp.fluid.src
+    },
   ]
 
   return (
@@ -37,7 +48,11 @@ export const WorkPostTemplate = ({
                 {title}
               </h1>
               <div>
-                <SRLWrapper />
+                <SRLWrapper>
+                  <img src={featuredimage.childImageSharp.fluid.src} alt="Umbrella" />
+                  <img src={image2.childImageSharp.fluid.src} alt="Umbrella" />
+                  <img src={image3.childImageSharp.fluid.src} alt="Umbrella" />
+                </SRLWrapper>
               </div>
               <div>
                 <p>Material: {material}</p>
@@ -76,6 +91,7 @@ WorkPostTemplate.propTypes = {
   material: PropTypes.string,
   price: PropTypes.string,
   helmet: PropTypes.object,
+  featuredimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
 }
 
 const WorkPost = ({ data }) => {
@@ -101,6 +117,9 @@ const WorkPost = ({ data }) => {
         size={post.frontmatter.size}
         material={post.frontmatter.material}
         price={post.frontmatter.price}
+        featuredimage={post.frontmatter.featuredimage}
+        image2={post.frontmatter.image2}
+        image3={post.frontmatter.image3}
       />
     </Layout>
   )
@@ -126,21 +145,21 @@ export const pageQuery = graphql`
         price
         featuredimage {
           childImageSharp {
-            fluid(maxWidth: 120, quality: 100) {
+            fluid(maxWidth: 1920, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         image2 {
           childImageSharp {
-            fluid(maxWidth: 120, quality: 100) {
+            fluid(maxWidth: 1920, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         image3 {
           childImageSharp {
-            fluid(maxWidth: 120, quality: 100) {
+            fluid(maxWidth: 1920, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }
