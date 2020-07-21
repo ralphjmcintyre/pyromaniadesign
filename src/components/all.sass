@@ -8,7 +8,20 @@ $kaldi-red-invert: #fff
 $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
 $body-color: #333
-$black: #2b2523
+$black: #000
+
+body
+  font-family: 'B612', sans-serif !important
+
+.navbar
+  background-color: $black !important
+  
+  & .navbar-item
+    color: white
+
+    &:hover
+      background-color: $black
+      color: white
 
 .navbar .navbar-menu
   box-shadow:none !important
