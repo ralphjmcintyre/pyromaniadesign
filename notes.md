@@ -1,0 +1,2 @@
+- Contact form with ability to upload a file
+- Sectioning out sizes/prices based on options (portraits / small / logo / price)
