@@ -43,25 +43,34 @@ export const WorkPostTemplate = ({
         {helmet || ''}
         <div className="container content">
           <div className="columns">
-            <div className="column is-10 is-offset-1">
+            <div className="column is-10">
               <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
                 {title}
               </h1>
               <div>
                 <SRLWrapper>
-                  <img src={featuredimage.childImageSharp.fluid.src} alt="Umbrella" />
-                  <img src={image2.childImageSharp.fluid.src} alt="Umbrella" />
-                  <img src={image3.childImageSharp.fluid.src} alt="Umbrella" />
+                  <div className="columns">
+                    <div className="column is-4">
+                      <img className="lightbox-img" src={featuredimage.childImageSharp.fluid.src} alt="Umbrella" />
+                    </div>
+                    <div className="column is-4">
+                      <img className="lightbox-img" src={image2.childImageSharp.fluid.src} alt="Umbrella" />
+                    </div>
+                    <div className="column is-4">
+                      <img className="lightbox-img" src={image3.childImageSharp.fluid.src} alt="Umbrella" />
+                    </div>
+                  </div>
                 </SRLWrapper>
               </div>
-              <div>
+              <div className={"work-post-data"}>
                 <p>Material: {material}</p>
-              </div>
-              <div>
                 <p>Size: {size}</p>
+                <p>Price: {price}</p>
               </div>
               <div>
-                <p>Price: {price}</p>
+                <p>
+                  <Link className="button" to={"/contact"}>Contact for inquiries</Link>
+                </p>
               </div>
               {tags && tags.length ? (
                 <div style={{ marginTop: `4rem` }}>
