@@ -10,8 +10,6 @@ tags:
 ---
 Recommended wood for wood burning projects.  Basswood and birch board are great for home decor and sign projects. Pine can also be used, and is a cheaper option.  However, it can be difficult to work with because of sap pocks and uneven grain.  
 
-
-
 **\#1 Basswood** 
 
 Recommended for home decor projects, this wood gives a beautiful canvas for any project. 
@@ -21,8 +19,6 @@ Recommended for home decor projects, this wood gives a beautiful canvas for any 
 ![Walnut Hollow Basswood Country Plank for Wood Burning Home Decor ...](https://i.ebayimg.com/images/g/9jwAAOSws4FeX4Dc/s-l640.jpg)
 
 <!--EndFragment-->
-
-
 
 Provides a soft, clean canvas, great for detailed work.  Pro tip: this type of wood burns better at a lower heat because it is softer.
 
