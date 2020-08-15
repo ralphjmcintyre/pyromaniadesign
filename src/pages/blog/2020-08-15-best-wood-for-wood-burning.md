@@ -6,7 +6,10 @@ description: Best wood for wood burning
 featuredpost: false
 featuredimage: /img/basswood.jpg
 tags:
-  - basswood birch-board pine tips
+  - basswood
+  - birch board
+  - pine
+  - tips
 ---
 Recommended wood for wood burning projects.  Basswood and birch board are great for home decor and sign projects. Pine can also be used, and is a cheaper option.  However, it can be difficult to work with because of sap pocks and uneven grain.  
 
