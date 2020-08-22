@@ -39,7 +39,7 @@ export const WorkPostTemplate = ({
 
   return (
     <SimpleReactLightbox>
-      <section className="section">
+      <section className="section -work-post">
         {helmet || ''}
         <div className="container content">
           <div className="columns">
