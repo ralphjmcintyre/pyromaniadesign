@@ -60,15 +60,6 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-web-font-loader",
-      options: {
-        custom: {
-          families: ["b612regular"],
-          urls: ["/fonts/fonts.css"],
-        },
-      },
-    },
-    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // replace "UA-XXXXXXXXX-X" with your own Tracking ID
