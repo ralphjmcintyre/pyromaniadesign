@@ -5,8 +5,8 @@ title: Snake
 size: 9" x 10"
 material: basswood slice
 price: $200
-featuredimage: /img/img_2198.jpg
-image2: /img/img_2199-1-.jpg
+featuredimage: /img/img_2199-2.jpg
+image2: /img/img_2198.jpg
 image3: /img/img_2199.jpg
 tags:
   - snake
