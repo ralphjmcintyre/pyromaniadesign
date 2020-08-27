@@ -51,13 +51,13 @@ export const WorkPostTemplate = ({
                 <SRLWrapper>
                   <div className="columns">
                     <div className="column is-4">
-                      <img className="lightbox-img" src={featuredimage.childImageSharp.fluid.src} alt="Umbrella" />
+                      <img className="lightbox-img" src={featuredimage.childImageSharp.fluid.src} alt={title}/>
                     </div>
                     <div className="column is-4">
-                      <img className="lightbox-img" src={image2.childImageSharp.fluid.src} alt="Umbrella" />
+                      <img className="lightbox-img" src={image2.childImageSharp.fluid.src} alt={title} />
                     </div>
                     <div className="column is-4">
-                      <img className="lightbox-img" src={image3.childImageSharp.fluid.src} alt="Umbrella" />
+                      <img className="lightbox-img" src={image3.childImageSharp.fluid.src} alt={title} />
                     </div>
                   </div>
                 </SRLWrapper>
