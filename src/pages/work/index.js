@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { Link } from 'gatsby'
 import Layout from '../../components/Layout'
 import WorkRoll from '../../components/WorkRoll'
 
@@ -28,6 +29,7 @@ export default class WorkIndexPage extends React.Component {
         <section className="section">
           <div className="container">
             <div className="content">
+              <p>Please <Link to={"/contact"}>contact</Link> for purchase inquiries. Accepted forms of payment are PayPal and Venmo.</p>
               <WorkRoll />
             </div>
           </div>
