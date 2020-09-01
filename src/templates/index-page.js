@@ -128,7 +128,7 @@ IndexPageTemplate.propTypes = {
 
 const IndexPage = ({ data }) => {
   useEffect(() => {
-    navigate('/blog/');
+    navigate('/work/');
   }, []);
 
   const { frontmatter } = data.markdownRemark
